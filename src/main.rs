@@ -32,5 +32,5 @@ impl Handler for Server {
 }
 
 fn main() {
-    listen("127.0.0.1:5000", |out| Server { out }).unwrap();
+    listen("0.0.0.0:5000", |out| Server { out }).unwrap();
 }
